@@ -22,13 +22,11 @@ let Myfooter = require('./components/MyFooter.vue');
 // because i want to switch between two routers i dont need to use the in app
 let Home  = require('./components/Home.vue');
 let About = require('./components/About.vue');
-let Blog  = require('./components/Blog.vue');
-
+ 
 const routes = [
   { path: '/home', component : Home },
   { path: '/about', component: About },
-  { path: '/blog', component : Blog },
-]
+ ]
 
 const router = new VueRouter({
  // mode : 'history',  // i will ues it to remove # from our url

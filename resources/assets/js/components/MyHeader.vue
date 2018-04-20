@@ -10,8 +10,7 @@
    <div class="navbar-menu is-active">
     <router-link to="/home" class="navbar-item" >Home</router-link>
     <router-link to="/about" class="navbar-item" >About</router-link>
-    <router-link to="/blog" class="navbar-item" >Blog</router-link>
-   </div>
+    </div>
 
     <div class="navbar-burger">
       <span></span>
