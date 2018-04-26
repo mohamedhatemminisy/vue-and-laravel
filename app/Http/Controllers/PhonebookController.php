@@ -40,6 +40,7 @@ class PhonebookController extends Controller
      */
     // here i will use PhoneBookRequest to get validation from it
     
+    // to store data in database
     public function store(PhoneBookRequest $request)
     {
     	// validation of these attrubite are in PhoneBookRequest in Request folder
@@ -81,6 +82,7 @@ class PhonebookController extends Controller
      * @param  \App\Phonebook  $phonebook
      * @return \Illuminate\Http\Response
      */
+    // update data returned from vue form
     public function update(PhoneBookRequest $request)
     {
         $phonebook = Phonebook::find($request->id);
@@ -96,6 +98,7 @@ class PhonebookController extends Controller
      * @param  \App\Phonebook  $phonebook
      * @return \Illuminate\Http\Response
      */
+    // to delete defined row
     public function destroy(Phonebook $phonebook)
     {
         Phonebook::where('id',$phonebook->id)->delete();
